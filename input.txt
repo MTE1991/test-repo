@@ -1,0 +1,11 @@
+int main() {
+    int arr[] = { 12, 11.0, 13.5, 5, 6};
+    double N = sizeof(arr) / sizeof(arr[0]);
+    printf("Unsorted array: ");
+    for (int i = 0; i < N; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    // Calling insertion sort function
+    insertionSort(arr, N);
+}
